@@ -34,15 +34,29 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{french}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
 \usepackage{bookmark}
+\usepackage[style=apa]{biblatex}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={Enfin un format pivot !},
-  pdfauthor={Sébastien Mengin},
+  pdftitle={Titre du mémoire},
+  pdfauthor={Nom de l'auteur},
+  pdflang={fr},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{Enfin un format pivot !}
-\author{Sébastien Mengin}
-\date{}
+\title{Titre du mémoire}
+\author{Nom de l'auteur}
+\date{2025}

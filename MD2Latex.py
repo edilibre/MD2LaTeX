@@ -102,7 +102,7 @@ ttk.Button(root, text="Parcourir", command=select_output_file).grid(row=1, colum
 # Champ pour la classe de document
 ttk.Label(root, text="Classe de document :").grid(row=2, column=0, padx=5, pady=5)
 document_class_entry = ttk.Entry(root, width=50)
-document_class_entry.insert(0, "IFSI")  # Valeur par défaut
+document_class_entry.insert(0, "panIFSI")  # Valeur par défaut
 document_class_entry.grid(row=2, column=1, padx=5, pady=5)
 
 # Case à cocher pour la table des matières

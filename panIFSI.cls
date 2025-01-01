@@ -1,0 +1,1 @@
+\ProvidesDocumentClass{panIFSI}[2025/01/01 classe de document PanIFSI pour mémoires en sciences infirmières] % Date de la version de la classe
