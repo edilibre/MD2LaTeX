@@ -1,15 +1,12 @@
 ---
 documentclass: panIFSI
-title: "Titre du mémoire"
-author: "Nom de l'auteur"
+title: "Enfin un fichier pivot pour l'écriture des mémoires infirmiers !"
+author: "Sébastien Mengin"
 date: "2025"
 ifsi: "Institut de Formation en Soins Infirmiers"
 lang: "fr"     # ou "en" pour l'anglais
 header-includes:
-  - \usepackage[french]{babel}
-  - \usepackage{graphicx}
-  - \usepackage{booktabs}
-  - \usepackage[style=apa]{biblatex}
+- 
 ---
 
 # Introduction

@@ -2,11 +2,13 @@
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass{IFSI}
-\usepackage{Testsdeconversionstyles}
+\documentclass{panIFSI}
+\addbibresource{BiblioMFE.bib}
 \begin{document}
+\TFEAuthor{Sébastien Mengin}
+\TFETitle{Tests de conversion}
 \maketitle
-
+\nocite{*}
 \section{Introduction}\label{introduction}
 
 Le but de ce fichier de test est de générer un ensemble de cas
@@ -21,5 +23,7 @@ fréquemment rencontrés dans la rédaction de textes académiques
   des enrichissements de texte (gras, italique, exposant, indices,
   petites capitales)
 \end{itemize}
+
+\printbibliography
 
 \end{document}
